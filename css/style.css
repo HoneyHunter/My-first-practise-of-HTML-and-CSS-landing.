@@ -62,3 +62,27 @@ body {
 
 /* Header
 ========================= */
+.container-top {
+    padding-top: 29px;
+    height: 688px;
+    background-color: #e0e0e0;
+}
+.header-top {
+    display: flex;
+    justify-content: center;
+    max-width: 1249px;
+    background-color: #000000;
+    margin: 0 auto;
+    min-height: 89px;
+}
+.header-top__menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.header-top__menu-list {
+}
+.menu__item {
+}
+.header-top-menu__link {
+}
