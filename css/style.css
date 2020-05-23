@@ -1,0 +1,64 @@
+/* Сначала подключены шрифты на страницу, чтобы они работали локально */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(../fonts/OpenSans-Regular.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'),
+        url(../fonts/OpenSans-Italic.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'),
+        url(../fonts/OpenSans-Bold.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+        url(../fonts/OpenSans-SemiBold.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'),
+        url(../fonts/OpenSans-ExtraBold.ttf) format('ttf');
+}
+
+/* Заданы общие правила для body и всего HTML */
+body {
+    /* TODO найти и вставить ссылку на utube по прижатию футера */
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Header
+========================= */
