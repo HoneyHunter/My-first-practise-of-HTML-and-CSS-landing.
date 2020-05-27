@@ -67,7 +67,7 @@ body {
     height: 688px; /* TODO Не забыть про высоту контейнера*/
     background-color: #e0e0e0;
 }
-.header-top {
+header {
     display: flex;
     justify-content: center;
     max-width: 1249px;
@@ -75,14 +75,13 @@ body {
     margin: 0 auto;
     min-height: 89px;
 }
-.header-top__menu {
-    display: flex;
+nav {
+    display: inline-flex;
     align-items: stretch;
 }
 
-.header-top-menu__list {
+.nav__links {
     display: flex;
-    align-items: stretch;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
@@ -90,24 +89,28 @@ body {
     margin-left: -20px;
 }
 
-.menu__item {
+.nav-menu__item { /* li */
     display: flex;
     justify-content: center;
     min-height: inherit; /* ?Должно быть 89px.*/
 }
 
-.menu__item:hover{
+.nav-menu__item:hover {
     background-color: #ff3f40;
 }
 
-.header-top-menu__link {
+.nav-menu__link {
     display: flex;
     align-items: center;
     font-size: 14px;
     font-weight: 700;
+    letter-spacing: 0.49px; /* Avocode показал в макете межбуквенный отступ 0.49px*/
+    line-height: 24px;
     padding: 0 30px;
     color: #e0e0e0;
     text-decoration: none;
     text-transform: uppercase;
 }
+
+
 
