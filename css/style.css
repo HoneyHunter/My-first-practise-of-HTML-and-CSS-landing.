@@ -1,4 +1,3 @@
-/* Сначала подключены шрифты на страницу, чтобы они работали локально */
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
@@ -44,7 +43,7 @@
 }
 
 /* Заданы общие правила для body и всего HTML */
-body {
+.body {
     /* TODO найти и вставить ссылку на utube по прижатию футера */
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -62,44 +61,52 @@ body {
 
 /* Header
 ========================= */
-.container-top {
-    padding-top: 29px;
+.body__container-top {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 0;
     height: 688px; /* TODO Не забыть про высоту контейнера*/
     background-color: #e0e0e0;
 }
-header {
+.header {
+    position: absolute;
     display: flex;
     justify-content: center;
-    max-width: 1249px;
+    width: 1249px;
+    left: 50%;
+    margin-left: -624.5px;
+    margin-top: 29px;
     background-color: #000000;
-    margin: 0 auto;
     min-height: 89px;
 }
-nav {
+.nav {
     display: inline-flex;
+    flex-wrap: wrap;
     align-items: stretch;
 }
 
-.nav__links {
+.nav__menu { /* ul */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     margin-left: -20px;
-}
+} 
 
-.nav-menu__item { /* li */
+.nav__menu_item { /* li */
     display: flex;
     justify-content: center;
     min-height: inherit; /* ?Должно быть 89px.*/
 }
 
-.nav-menu__item:hover {
+.nav__menu_item:hover {
     background-color: #ff3f40;
 }
 
-.nav-menu__link {
+.nav__menu_link {
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -111,6 +118,3 @@ nav {
     text-decoration: none;
     text-transform: uppercase;
 }
-
-
-
