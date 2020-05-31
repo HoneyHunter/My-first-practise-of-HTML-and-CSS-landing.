@@ -61,9 +61,9 @@ body {
 
 /* Header
 ========================= */
-.container-top {
+.container__top {
     padding-top: 29px;
-    height: 688px; /* TODO Не забыть про высоту контейнера*/
+    /* height: 688px; TODO Не забыть про высоту контейнера */
     background-color: #e0e0e0;
 }
 header {
