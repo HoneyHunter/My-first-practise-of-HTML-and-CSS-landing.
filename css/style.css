@@ -64,9 +64,9 @@ body {
 .container__top {
     padding-top: 29px;
     /* height: 688px; TODO Не забыть про высоту контейнера */
-    background-color: #e0e0e0;
+    background-color: #f6f2f2;
 }
-header {
+.header {
     display: flex;
     justify-content: center;
     max-width: 1249px;
@@ -74,7 +74,7 @@ header {
     margin: 0 auto;
     min-height: 89px;
 }
-nav {
+.nav-menu {
     display: inline-flex;
     align-items: stretch;
 }
@@ -111,5 +111,85 @@ nav {
     text-transform: uppercase;
 }
 
+/* Intro 
+=======================*/
+.main__block {
+    flex-grow: 1;
+}
+
+.intro__wrapper {
+
+}
+
+.intro__wrapper_color {
+    background-color: #f6f2f2;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1249px;
+    padding-top: 103px;
+    padding-bottom: 111px; /* 94px В образце*/
+    background-color: #f6f2f2;
+}
+.intro__inner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 588px;
+    min-height: 164px;
+    padding: 0;
+    margin-right: 75px;
+}
+
+.intro__title {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+    margin-bottom: 29px;
+}
+
+.intro__title_subtitle {
+    /* font-size: 60px;
+    font-weight: 800;
+    color: #000000;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0; */
+    letter-spacing: 6px;
+    word-break: break-word;
+    margin-bottom: 58px;
+}
+.intro__text {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    max-width: 512px;
+    line-height: 1.75;
+    color: #000000;
+    opacity: 0.7;
+}
+.intro-button {
+}
+.intro-button_mod {
+}
+.intro-image__link {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+.intro-image__link-link {
+}
+.intro__image {
+}
 
 
+/* TODO Остановился на стилизации .intro__title_subtitle. Нужно проверить необходимость дублирования закоментированных там свойств. Также посмотреть, почему буквы заголовка h1 в .intro__inner находятся ниже, чем необходимо.*/
