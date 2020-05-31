@@ -65,14 +65,14 @@
     position: relative;
     box-sizing: border-box;
     padding-top: 0;
-    height: 688px; /* TODO Не забыть про высоту контейнера*/
+    max-height: 688px; /* TODO Не забыть про высоту контейнера*/
     background-color: #e0e0e0;
 }
 .header {
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 1249px;
+    min-width: 1249px;
     left: 50%;
     margin-left: -624.5px;
     margin-top: 29px;
