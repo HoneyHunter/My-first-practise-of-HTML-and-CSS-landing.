@@ -103,7 +103,7 @@ body {
     align-items: center;
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.49px; /* Avocode показал в макете межбуквенный отступ 0.49px*/
+    letter-spacing: 0.49px;
     line-height: 24px;
     padding: 0 30px;
     color: #e0e0e0;
@@ -137,11 +137,13 @@ body {
 }
 .intro__inner {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
     max-width: 588px;
     min-height: 164px;
+    margin: 0;
     padding: 0;
-    margin-right: 75px;
 }
 
 .intro__title {
@@ -152,24 +154,19 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin: 0;
-    margin-bottom: 29px;
+    padding: 0;
+    margin-bottom: 36px;
 }
 
 .intro__title_subtitle {
-    /* font-size: 60px;
-    font-weight: 800;
-    color: #000000;
-    line-height: 1.2;
-    text-transform: uppercase;
-    margin: 0; */
     letter-spacing: 6px;
     word-break: break-word;
-    margin-bottom: 58px;
 }
 .intro__text {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
+    margin-bottom: 58px;
     padding: 0;
     max-width: 512px;
     line-height: 1.75;
@@ -177,11 +174,27 @@ body {
     opacity: 0.7;
 }
 .intro-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 227px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 16px 63px;
+    margin: 0 0 12px 0;
+
 }
 .intro-button_mod {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ff2d2d;
 }
 .intro-image__link {
     display: flex;
+    width: 551px;
+    height: 356px;
+    box-shadow: 0 -10px 40px 0 #d7d4d4;
     margin: 0;
     padding: 0;
 
@@ -192,4 +205,4 @@ body {
 }
 
 
-/* TODO Остановился на стилизации .intro__title_subtitle. Нужно проверить необходимость дублирования закоментированных там свойств. Также посмотреть, почему буквы заголовка h1 в .intro__inner находятся ниже, чем необходимо.*/
+/* TODO Остановился на картинке. Получилось поднять её выше кнопки за счет присваивания картинке ширины и высоты.*/
