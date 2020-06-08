@@ -43,8 +43,7 @@
 }
 
 /* Заданы общие правила для body и всего HTML */
-body {
-    /* TODO найти и вставить ссылку на utube по прижатию футера */
+.body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 16px;
     display: flex;
@@ -92,6 +91,7 @@ body {
     display: flex;
     justify-content: center;
     min-height: inherit; /* ?Должно быть 89px.*/
+    transition: background-color .1s linear;
 }
 
 .nav-menu__item:hover {
@@ -130,9 +130,11 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 1249px;
+    max-width: 1249px; /* Нужно создать container, а флекс-элементу ширину 100% */
     padding-top: 103px;
     padding-bottom: 111px; /* 94px В образце*/
+    padding-left: 1vw;
+    padding-right: 1vw;
     background-color: #f6f2f2;
 }
 .intro__inner {
@@ -149,16 +151,21 @@ body {
 .intro__title {
     font-size: 60px;
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.5; /* Посмотреть в макете, какой там отступ между строками.*/
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 36px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding-top: 0;
 }
 
-.intro__title_subtitle {
+.intro__title_mod::first-line{
+    line-height: 0.7;
+    /* Из-за того, что у h1 при использовании line-height появляется верхний отступ, который невозможно убрать с помощью margin: 0; пришлось уменьшать line-height: для первой строки. В результате, удалось прижать заголовок первого уровня в верхнему краю блока.*/
+}
+
+.intro__title_subtitle { 
     letter-spacing: 6px;
     word-break: break-word;
 }
@@ -166,7 +173,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 58px;
+    margin-bottom: 41px;
     padding: 0;
     max-width: 512px;
     line-height: 1.75;
@@ -194,7 +201,7 @@ body {
     display: flex;
     width: 551px;
     height: 356px;
-    box-shadow: 0 -10px 40px 0 #d7d4d4;
+    box-shadow: 0 -10px 40px 0 rgb(124, 124, 124);
     margin: 0;
     padding: 0;
 
