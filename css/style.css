@@ -82,7 +82,7 @@ p {
     margin: 0 auto;
 }
 .nav-menu {
-    display: inline-flex;
+    display: flex;
     align-items: stretch;
 }
 
@@ -219,7 +219,7 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    max-width: 1249px;
+    max-width: 1248px;
     margin: 0 auto;
     padding-top: 111px;
     padding-bottom: 56px;
@@ -333,4 +333,112 @@ hr {
 
 /* Features
 ================= */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1249px;
+    margin: 0 auto;
+    padding-top:95px ;
+    padding-bottom: 138;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.feature__wrapper {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 88px; /* ! Пересмотреть отступ*/
 
+}
+.feature__title {
+    padding-left: 14px; /*! Указан на сайте Валерия*/
+    margin-bottom: 17px; /* ! Пересмотреть отступ*/
+    font-size: 42px;
+    font-weight: 700;
+    color: #000000;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0.38px;
+}
+
+.feature__text {
+    max-width: 505px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+    opacity: 0.7;
+}
+.horizontal-short__line {
+    width: 132px;
+    height: 3px;
+    border: none;
+    background-color: #ff2d2d;
+}
+
+.features__navigation {
+    max-width: 1249px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 66px; /* ! Пересмотреть отступ*/
+    padding: 0;
+}
+
+.features__links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.features__item {
+    display: flex;
+    justify-content: center;
+}
+
+.feature__link {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.22px;
+    line-height: 1.09;
+    padding: 0 29px;
+    color: #000000;
+    opacity: 0.7;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .1s linear;
+}
+
+.feature__link_mod {
+    color:#ff2d2d;
+    opacity: 1;
+}
+
+.feature__link:hover {
+    color: #ff2d2d;
+
+}
+
+
+/* Features - Portfolio
+================= */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1248px;
+    margin: 0 auto;
+}
+.portfolio-image {
+    width: 25%;
+}
+
+
+/* !!! Работа со вторым меню навигации. Нужно разобраться, с margin and paddings.*/
